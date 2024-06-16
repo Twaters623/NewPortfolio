@@ -59,8 +59,8 @@ aside {
 
 #sideContent {
     padding: 50px;
-    text-align:center;
-    align-content:center;
+    text-align: center;
+    align-content: center;
 }
 
 #chessVideo {
@@ -79,9 +79,8 @@ aside {
     display: inline-block;
     width: 100%;
     max-width: 90vw;
-    text-align:center;
-    /* align-content: center; */
-    margin:auto;
+    text-align: center;
+    margin: auto;
 }
 
 .projectimg {
@@ -89,6 +88,10 @@ aside {
     width: 100%;
     max-width: 49vw;
     height: 49vh;
+}
+
+.projectDes {
+    font-size: 1.2vw;
 }
 
 /* Media Queries */
