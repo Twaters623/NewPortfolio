@@ -29,11 +29,12 @@ aside{
     float:right;
     text-align:center;
     width:40vw;
-    height:75vh;
+    height:77vh;
     
     border: 1px black solid;
     padding:30px;
-    font-size:1.45vw;
+    font-size:3vh;
+    overflow:hidden
     
 }
 #mainContent{
@@ -70,7 +71,7 @@ aside{
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     margin:3px;
     display:inline-block;
     width:50vw;
@@ -78,6 +79,6 @@ aside{
 }
 .projectimg{
     text-align:center;
-    width:50vw;
-    height:50vh;
+    width:49vw;
+    height:49vh;
 }
