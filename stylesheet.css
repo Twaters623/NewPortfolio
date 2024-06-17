@@ -6,8 +6,8 @@ body {
 }
 
 .example {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
 }
 
 .example::-webkit-scrollbar {
@@ -75,23 +75,27 @@ aside {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    margin: 3px;
-    display: inline-block;
-    width: 100%;
-    max-width: 90vw;
-    text-align: center;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .projectimg {
-    text-align: center;
-    width: 100%;
-    max-width: 49vw;
-    height: 49vh;
+    flex: 1 1 40%;
+    max-width: 40%;
+    height: auto;
 }
 
 .projectDes {
     font-size: 1.2vw;
+    flex: 1 1 55%;
+}
+
+#Sideprojectsheader {
+    font-size: 3.5vw;
 }
 
 /* Media Queries */
@@ -100,22 +104,22 @@ aside {
         width: 45%;
         font-size: 2.5vh;
     }
-    
+
     #aboutMeHeader {
         font-size: 2.5vw;
     }
-    
+
     .Descriptions {
         font-size: 1.5vw;
     }
-    
+
     #chessVideo {
         height: 60vh;
         max-width: 45vw;
     }
-    
+
     .projectsections {
-        max-width: 55vw;
+        max-width: 80vw;
     }
 }
 
@@ -124,29 +128,39 @@ aside {
         width: 100%;
         height: auto;
         float: none;
+        font-size: 2vh; 
+        padding: 15px; 
     }
-    
+
     #mainContent {
         height: auto;
     }
-    
+
     #imageDiv {
         width: 100%;
         height: auto;
     }
-    
+
     #chessVideo {
-        width: 100%;
+        width: 80%;
         height: auto;
-        max-width: 100%;
+        max-width: 80%;
     }
-    
+
     .projectsections {
         max-width: 100%;
+        flex-direction: column;
+        text-align: center;
     }
-    
+
     .projectimg {
         max-width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .projectDes {
+        width: 100%;
+        font-size: 2.5vw;
     }
 }
 
@@ -154,17 +168,27 @@ aside {
     header {
         letter-spacing: 5px;
     }
-    
+
     #aboutMeHeader {
         font-size: 5vw;
     }
-    
+
     .Descriptions {
         font-size: 2.5vw;
     }
-    
+
     aside {
         font-size: 2vh;
+    }
+
+    #chessVideo {
+        width: 90%;
+        height: auto;
+        max-width: 90%;
+    }
+
+    .projectDes {
+        font-size: 3vw;
     }
 }
 
@@ -173,24 +197,35 @@ aside {
         letter-spacing: 2px;
         padding: 5px;
     }
-    
+
     aside {
         padding: 15px;
+        font-size: 1.5vh; 
     }
-    
+
     .Descriptions {
         font-size: 3vw;
     }
-    
+
     #sideContent {
         padding: 25px;
     }
-    
+
     .projectsections {
         padding: 5px;
     }
-    
+
     .projectimg {
         height: auto;
+    }
+
+    .projectDes {
+        font-size: 3.5vw;
+    }
+
+    #chessVideo {
+        width: 80%;
+        height: auto;
+        max-width: 80%;
     }
 }
